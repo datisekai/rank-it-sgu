@@ -49,11 +49,20 @@ const Home: NextPage = ({ students }: any) => {
             Datisekai
           </a>
         </p>
-        <div style={{ height: 650, width: "100%" }}>
+        <div
+          style={{
+            height: 650,
+            width: "100%",
+            padding: "0px 20px",
+          }}
+        >
           <DataGrid
             rows={rows}
             columns={columns}
             pageSize={10}
+            sx={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            }}
             rowsPerPageOptions={[5]}
             checkboxSelection
           />
